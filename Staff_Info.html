@@ -1,0 +1,90 @@
+<!-- Author: Alikhan, Group SE-2516 — Assignment #2: Advanced CSS -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AITU Wiki | Staff Info</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/Universe.png" type="image/png">
+</head>
+<body>
+    <div class="site-layout">
+    
+    <header class="site-header">
+            <div class="container nav-bar">
+                <a href="index.html" class="nav-bar__logo">
+                    <img src="images/Universe.png" alt="AITU">
+                    AITU | Wiki |
+                </a>
+                <nav class="nav-menu">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">Info</a>
+                    <a href="events.html">Events</a>
+                    <a href="news.html">News</a>
+                    <a href="AITUM.html">AITU_MAP</a>
+                    <a href="Staff_Info.html" class="active">Staff_Info</a>
+                </nav>
+                <a href="events.html" class="btn btn--primary">Join an event</a>
+            </div>
+        </header>
+    <aside class="site-sidebar" aria-label="Explore AITU Wiki">
+        <h2>Explore AITU Wiki</h2>
+        <nav aria-label="Quick links">
+            <a href="index.html#highlights">Campus highlights</a>
+            <a href="index.html#gallery">Campus gallery</a>
+            <a href="about.html">About the team</a>
+            <a href="events.html">Events</a>
+            <a href="news.html">News</a>
+        </nav>
+    </aside>
+
+
+        <main>
+        <section class="container">
+            <h1 class="section-title" style="margin-top:3rem;">Meet the staff</h1>
+            <p class="lead">A few of the instructors students most often ask about.</p>
+            <div class="team-grid">
+                <div class="team-card">
+                    <img class="team-card__photo" src="images/avatar-zhandos.svg" alt="Portrait placeholder for Mukhanov Samat">
+                    <h3 class="team-card__name">Mukhanov Samat</h3>
+                    <p class="team-card__role">School of Cybersecurity</p>
+                    <p class="team-card__bio">PhD, teaches network security and applied cryptography courses.</p>
+                </div>
+                <div class="team-card">
+                    <img class="team-card__photo" src="images/avatar-adilzhan.svg" alt="Portrait placeholder for Zhumabek Tilek">
+                    <h3 class="team-card__name">Zhumabek Tilek</h3>
+                    <p class="team-card__role">School of Intelligent Systems</p>
+                    <p class="team-card__bio">PhD, focuses on machine learning and intelligent data systems.</p>
+                </div>
+                <div class="team-card">
+                    <img class="team-card__photo" src="images/avatar-alikhan.svg" alt="Portrait placeholder for Yessenbayev Zhandos">
+                    <h3 class="team-card__name">Yessenbayev Zhandos</h3>
+                    <p class="team-card__role">School of Software Engineering</p>
+                    <p class="team-card__bio">Advises Software Engineering students on front-end and web development courses.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <table class="footer-team">
+                <caption>Team — AITU | Wiki, Assignment #2</caption>
+                <thead>
+                    <tr><th>Group</th><th>Name</th><th>Pages created</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>SE-2516</td><td>Zhandos</td><td>Home, About</td></tr>
+                    <tr><td>SE-2516</td><td>Adilzhan</td><td>News, Events</td></tr>
+                    <tr><td>SE-2516</td><td>Alikhan</td><td>AITU_MAP, Staff_Info</td></tr>
+                </tbody>
+            </table>
+            <p style="text-align:center; margin-top:1.2rem; font-size:0.85rem;">&copy; AITU |Wiki|</p>
+        </div>
+    </footer>
+    </div>
+</body>
+
+
+</html>

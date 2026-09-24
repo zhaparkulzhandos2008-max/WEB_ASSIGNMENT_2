@@ -1,0 +1,132 @@
+<!-- Author: Adilzhan, Group SE-2516 — Assignment #2: Advanced CSS -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AITU Wiki | Events</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/Universe.png" type="image/png">
+</head>
+<body>
+    <div class="site-layout">
+
+    <header class="site-header">
+        <div class="container nav-bar">
+            <a href="index.html" class="nav-bar__logo">
+                <img src="images/Universe.png" alt="AITU logo">
+                AITU | Wiki |
+            </a>
+            <nav class="nav-menu">
+                <a href="index.html">Home</a>
+                <a href="about.html">Info</a>
+                <a href="events.html" class="active">Events</a>
+                <a href="news.html">News</a>
+                <a href="AITUM.html">AITU_MAP</a>
+                <a href="Staff_Info.html">Staff_Info</a>
+            </nav>
+            <a href="#event-form" class="btn btn--primary">Join an event</a>
+        </div>
+    </header>
+    <aside class="site-sidebar" aria-label="Explore AITU Wiki">
+        <h2>Explore AITU Wiki</h2>
+        <nav aria-label="Quick links">
+            <a href="index.html#highlights">Campus highlights</a>
+            <a href="index.html#gallery">Campus gallery</a>
+            <a href="about.html">About the team</a>
+            <a href="events.html">Events</a>
+            <a href="news.html">News</a>
+        </nav>
+    </aside>
+
+
+    <main>
+        <section class="container">
+            <h1 class="section-title" style="margin-top:3rem;">Upcoming events</h1>
+            <p class="lead">Hackathons, workshops and meetups happening on campus this semester.</p>
+
+            <h2 class="section-title">Event schedule</h2>
+            <div class="table-wrapper">
+                <table id="events-table">
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Event</th>
+                            <th>Location</th>
+                            <th>Organizer</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Oct 3</td>
+                            <td>Front-End Hackathon</td>
+                            <td>Main Building, Room 214</td>
+                            <td>SE School</td>
+                        </tr>
+                        <tr>
+                            <td>Oct 17</td>
+                            <td>Career Fair</td>
+                            <td>Sports Hall</td>
+                            <td>Career Center</td>
+                        </tr>
+                        <tr>
+                            <td>Nov 5</td>
+                            <td>AI &amp; Society Guest Lecture</td>
+                            <td>Auditorium A</td>
+                            <td>AI &amp; Society Course</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h2 class="section-title">How to join an event</h2>
+            <ol class="steps-list">
+                <li>Pick an event from the schedule above.</li>
+                <li>Fill in the registration form below.</li>
+                <li>Check your email for a confirmation message.</li>
+            </ol>
+
+            <h2 class="section-title">Register for an event</h2>
+            <form id="event-form" action="#" method="post">
+                <label for="reg-name">Full name</label>
+                <input type="text" id="reg-name" name="reg-name" placeholder="Your name" required>
+
+                <label for="reg-email">Email</label>
+                <input type="email" id="reg-email" name="reg-email" placeholder="you@example.com" required>
+
+                <label for="reg-event">Choose event</label>
+                <select id="reg-event" name="reg-event">
+                    <option value="hackathon">Front-End Hackathon</option>
+                    <option value="career-fair">Career Fair</option>
+                    <option value="lecture">AI &amp; Society Guest Lecture</option>
+                </select>
+
+                <label for="reg-message">Message</label>
+                <textarea id="reg-message" name="reg-message" rows="4" placeholder="Anything we should know?"></textarea>
+
+                <button type="submit" class="btn btn--primary">Register</button>
+                <p class="form-hint">We'll only use your email to send event details.</p>
+            </form>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <table class="footer-team">
+                <caption>Team — AITU | Wiki, Assignment #2</caption>
+                <thead>
+                    <tr><th>Group</th><th>Name</th><th>Pages created</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>SE-2516</td><td>Zhandos</td><td>Home, About</td></tr>
+                    <tr><td>SE-2516</td><td>Adilzhan</td><td>News, Events</td></tr>
+                    <tr><td>SE-2516</td><td>Alikhan</td><td>AITU_MAP, Staff_Info</td></tr>
+                </tbody>
+            </table>
+            <p style="text-align:center; margin-top:1.2rem; font-size:0.85rem;">&copy; AITU |Wiki|</p>
+        </div>
+    </footer>
+
+    </div>
+</body>
+</html>

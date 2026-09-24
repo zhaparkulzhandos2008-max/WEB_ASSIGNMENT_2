@@ -1,0 +1,119 @@
+<!-- Author: Zhandos, Group SE-2516 — Assignment #2: Advanced CSS -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AITU Wiki | Home</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/Universe.png" type="image/png">
+</head>
+<body>
+    <div class="site-layout">
+
+    <header class="site-header">
+        <div class="container nav-bar">
+            <a href="index.html" class="nav-bar__logo">
+                <img src="images/Universe.png" alt="AITU">
+                AITU | Wiki |
+            </a>
+            <nav class="nav-menu">
+                <a href="index.html" class="active">Home</a>
+                <a href="about.html">Info</a>
+                <a href="events.html">Events</a>
+                <a href="news.html">News</a>
+                <a href="AITUM.html">AITU_MAP</a>
+                <a href="Staff_Info.html">Staff_Info</a>
+            </nav>
+            <a href="events.html" class="btn btn--primary">Join an event</a>
+        </div>
+    </header>
+    <aside class="site-sidebar" aria-label="Explore AITU Wiki">
+        <h2>Explore AITU Wiki</h2>
+        <nav aria-label="Quick links">
+            <a href="index.html#highlights">Campus highlights</a>
+            <a href="index.html#gallery">Campus gallery</a>
+            <a href="about.html">About the team</a>
+            <a href="events.html">Events</a>
+            <a href="news.html">News</a>
+        </nav>
+    </aside>
+
+
+    <main>
+        <section class="hero">
+            <div class="container hero__container">
+                <div class="hero__content">
+                    <h1 class="hero__title">AITU is an amazing world</h1>
+                    <p class="hero__desc">Clubs, mentors, hackathons and events that make campus life at AITU worth showing up for.</p>
+                    <div class="hero__actions">
+                        <a href="events.html" class="btn btn--dark">See events</a>
+                        <a href="#highlights" class="hero__scroll" aria-label="Scroll to highlights">
+                            <img src="images/chevron-down.svg" alt="Scroll down">
+                        </a>
+                    </div>
+                </div>
+                <img class="hero__image" src="images/hero-illustration.svg" alt="Illustration of students studying and collaborating on campus">
+            </div>
+        </section>
+
+        <section class="features" id="highlights">
+            <div class="container">
+                <h2 class="section-title">Why students like it here</h2>
+                <ul class="features__list">
+                    <li>
+                        <img class="feature-icon" src="images/gallery-01.svg" alt="Mentorship illustration">
+                        <h3>Mentorship</h3>
+                        <p>Senior students guide first-years through their first hard semester.</p>
+                        <a class="btn btn--primary feature-link" href="about.html">Explore Mentorship</a>
+                    </li>
+                    <li>
+                        <img class="feature-icon" src="images/gallery-02.svg" alt="Hackathons illustration">
+                        <h3>Hackathons</h3>
+                        <p>Regular hands-on events for the Software Engineering school.</p>
+                        <a class="btn btn--primary feature-link" href="events.html">Explore Hackathons</a>
+                    </li>
+                    <li>
+                        <h3>Clubs &amp; societies</h3>
+                        <p>From robotics to debate — there's a group for almost everyone.</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="container gallery-section" id="gallery" aria-labelledby="gallery-title">
+            <h2 class="section-title" id="gallery-title">Campus life gallery</h2>
+            <div class="image-gallery">
+                <figure class="gallery-item"><img src="images/gallery-01.svg" alt="Illustration of student mentorship" loading="lazy"><figcaption>Student mentorship</figcaption></figure>
+                <figure class="gallery-item"><img src="images/gallery-02.svg" alt="Illustration of hackathon teamwork" loading="lazy"><figcaption>Hackathon teamwork</figcaption></figure>
+                <figure class="gallery-item"><img src="images/gallery-03.svg" alt="Illustration of student clubs" loading="lazy"><figcaption>Student clubs</figcaption></figure>
+                <figure class="gallery-item"><img src="images/gallery-04.svg" alt="Illustration of campus events" loading="lazy"><figcaption>Campus events</figcaption></figure>
+                <figure class="gallery-item"><img src="images/gallery-05.svg" alt="Illustration of university news" loading="lazy"><figcaption>University news</figcaption></figure>
+                <figure class="gallery-item"><img src="images/gallery-06.svg" alt="Illustration of campus map" loading="lazy"><figcaption>Campus map</figcaption></figure>
+                <figure class="gallery-item"><img src="images/gallery-07.svg" alt="Illustration of study spaces" loading="lazy"><figcaption>Study spaces</figcaption></figure>
+                <figure class="gallery-item"><img src="images/gallery-08.svg" alt="Illustration of student community" loading="lazy"><figcaption>Student community</figcaption></figure>
+                <figure class="gallery-item"><img src="images/gallery-09.svg" alt="Illustration of aitu wiki team" loading="lazy"><figcaption>AITU Wiki team</figcaption></figure>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <table class="footer-team">
+                <caption>Team — AITU | Wiki, Assignment #2</caption>
+                <thead>
+                    <tr><th>Group</th><th>Name</th><th>Pages created</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>SE-2516</td><td>Zhandos</td><td>Home, About</td></tr>
+                    <tr><td>SE-2516</td><td>Adilzhan</td><td>News, Events</td></tr>
+                    <tr><td>SE-2516</td><td>Alikhan</td><td>AITU_MAP, Staff_Info</td></tr>
+                </tbody>
+            </table>
+            <p style="text-align:center; margin-top:1.2rem; font-size:0.85rem;">&copy; AITU |Wiki|</p>
+        </div>
+    </footer>
+
+    </div>
+</body>
+</html>
